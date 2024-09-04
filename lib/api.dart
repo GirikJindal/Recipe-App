@@ -5,7 +5,7 @@ import 'package:recipe_book_flutter/recipe.dart';
 
 class Api {
   static const String _baseUrl = 'https://api.spoonacular.com/recipes';
-  static const String _apiKey = '72c851fbf6f2401298b279edc43de7c6';
+  static const String _apiKey = '<Enter Spoonacular API Key here>';
 
   static Future<List<Recipe>> searchRecipes(String query) async {
     final url = Uri.parse('$_baseUrl/complexSearch?query=$query&apiKey=$_apiKey');
